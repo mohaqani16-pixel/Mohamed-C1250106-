@@ -1,0 +1,238 @@
+<!-- 
+Filename: booking.html
+Purpose: Guest booking form page with comprehensive form fields, fieldsets, and accessibility features
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Book a Guest on AirWave Podcast - Submit your expertise and topic proposal">
+    <title>AirWave - Book a Guest</title>
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+    <link rel="stylesheet" href="dd.css">
+</head>
+<body>
+    <!-- Header with navigation -->
+    <header role="banner">
+        <div class="logo">
+            <h1>🎙️ AirWave</h1>
+        </div>
+        <nav role="navigation" aria-label="Main navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html">Episodes</a></li>
+                <li><a href="Booking.html" aria-current="page">Book a Guest</a></li>
+                <li><a href="Help.html">Help</a></li>
+                <li><a href="About.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main content -->
+    <main role="main">
+        <!-- Page Header -->
+        <section class="page-header">
+            <h2>📝 Book a Guest</h2>
+            <p>Share your expertise with our audience</p>
+        </section>
+
+        <!-- Booking Form Section -->
+        <section class="form-section" aria-labelledby="form-heading">
+            <h2 id="form-heading">Guest Booking Form</h2>
+            <p class="form-description">Fill out the form below to apply as a guest on the AirWave podcast. We review all submissions and contact selected guests within 5 business days.</p>
+            
+            <form id="bookingForm" class="booking-form" action="#" method="POST" aria-label="Guest booking form">
+                
+                <!-- Personal Information Fieldset -->
+                <fieldset class="form-fieldset">
+                    <legend>Personal Information</legend>
+                    
+                    <div class="form-group">
+                        <label for="fullName">Full Name <span class="required">*</span></label>
+                        <input type="text" id="fullName" name="fullName" placeholder="Enter your full name" required aria-required="true">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email Address <span class="required">*</span></label>
+                        <input type="email" id="email" name="email" placeholder="your@email.com" required aria-required="true">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" placeholder="+252 61 XXX XXXX">
+                    </div>
+                </fieldset>
+
+                <!-- Expertise Fieldset -->
+                <fieldset class="form-fieldset">
+                    <legend>Expertise & Topic</legend>
+                    
+                    <div class="form-group">
+                        <label for="topic">Topic/Expertise <span class="required">*</span></label>
+                        <select id="topic" name="topic" required aria-required="true">
+                            <option value="">-- Select a topic --</option>
+                            <option value="technology">Technology & Innovation</option>
+                            <option value="politics">Politics & Governance</option>
+                            <option value="culture">Culture & Heritage</option>
+                            <option value="business">Business & Entrepreneurship</option>
+                            <option value="health">Health & Wellness</option>
+                            <option value="education">Education & Learning</option>
+                            <option value="media">Media & Journalism</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="topicDetails">Specific Topic Details <span class="required">*</span></label>
+                        <input type="text" id="topicDetails" name="topicDetails" placeholder="e.g., AI in Healthcare, Startup Funding in Somalia" required aria-required="true">
+                    </div>
+                </fieldset>
+
+                <!-- Preferences Fieldset -->
+                <fieldset class="form-fieldset">
+                    <legend>Appearance Preferences</legend>
+                    
+                    <div class="form-group radio-group">
+                        <label class="radio-label">Gender</label>
+                        <div class="radio-options">
+                            <div class="radio-item">
+                                <input type="radio" id="male" name="gender" value="male" required aria-required="true">
+                                <label for="male">Male</label>
+                            </div>
+                            <div class="radio-item">
+                                <input type="radio" id="female" name="gender" value="female">
+                                <label for="female">Female</label>
+                            </div>
+                            <div class="radio-item">
+                                <input type="radio" id="other" name="gender" value="other">
+                                <label for="other">Other</label>
+                            </div>
+                            <div class="radio-item">
+                                <input type="radio" id="preferNot" name="gender" value="prefer-not">
+                                <label for="preferNot">Prefer not to say</label>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group checkbox-group">
+                        <label class="checkbox-label">Areas of Interest <span class="required">*</span></label>
+                        <div class="checkbox-options">
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="liveInterview" name="interests" value="live-interview">
+                                <label for="liveInterview">🎙️ Live Interview</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="preRecorded" name="interests" value="pre-recorded">
+                                <label for="preRecorded">⏺️ Pre-recorded Episode</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="remoteCall" name="interests" value="remote-call">
+                                <label for="remoteCall">📞 Remote Call</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="studioVisit" name="interests" value="studio-visit">
+                                <label for="studioVisit">🏢 Studio Visit</label>
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <!-- Additional Information Fieldset -->
+                <fieldset class="form-fieldset">
+                    <legend>Additional Information</legend>
+                    
+                    <div class="form-group">
+                        <label for="comments">Comments/Pitch <span class="required">*</span></label>
+                        <textarea id="comments" name="comments" rows="6" placeholder="Tell us about yourself, your expertise, and why you'd be a great guest on AirWave..." required aria-required="true"></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="website">Website/Social Media (Optional)</label>
+                        <input type="url" id="website" name="website" placeholder="https://yourwebsite.com or @yourhandle">
+                    </div>
+                    
+                    <div class="form-group checkbox-item">
+                        <input type="checkbox" id="terms" name="terms" required aria-required="true">
+                        <label for="terms">I agree to the <a href="#">terms and conditions</a> and confirm that the information provided is accurate. <span class="required">*</span></label>
+                    </div>
+                </fieldset>
+
+                <!-- Submit Button -->
+                <div class="form-actions">
+                    <button type="submit" class="submit-btn">Submit Application</button>
+                    <button type="reset" class="reset-btn">Reset Form</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer with Subscribe Form -->
+    <footer role="contentinfo">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Subscribe to AirWave</h3>
+                <p>Get the latest episodes delivered to your inbox</p>
+                <form class="subscribe-form" id="footerSubscribeForm" aria-label="Newsletter subscription">
+                    <label for="footerEmail" class="visually-hidden">Email address</label>
+                    <input type="email" id="footerEmail" name="email" placeholder="your@email.com" required aria-required="true">
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="gallery.html">Episodes</a></li>
+                    <li><a href="Booking.html">Book a Guest</a></li>
+                    <li><a href="About.html">About</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>Email: contact@airwave.podcast</p>
+                <p>Location: Mogadishu, Somalia</p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2026 AirWave Podcast. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Form handling
+        document.addEventListener('DOMContentLoaded', function() {
+            const bookingForm = document.getElementById('bookingForm');
+            const subscribeForm = document.getElementById('footerSubscribeForm');
+            
+            // Booking form submission
+            bookingForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                // Validate interests - at least one checkbox should be checked
+                const interestsChecked = document.querySelectorAll('input[name="interests"]:checked');
+                if (interestsChecked.length === 0) {
+                    alert('Please select at least one area of interest.');
+                    return;
+                }
+                
+                // Get form data
+                const formData = new FormData(bookingForm);
+                const fullName = formData.get('fullName');
+                const topic = formData.get('topic');
+                
+                alert(`Thank you, ${fullName}! Your application to discuss "${topic}" has been submitted. We'll contact you within 5 business days.`);
+                bookingForm.reset();
+            });
+            
+            // Subscribe form
+            subscribeForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                const email = document.getElementById('footerEmail').value;
+                alert(`Thank you for subscribing with ${email}! You'll receive our latest episodes.`);
+                subscribeForm.reset();
+            });
+        });
+    </script>
+</body>
+</html>
