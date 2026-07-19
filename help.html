@@ -1,0 +1,214 @@
+<!-- 
+Filename: help.html
+Purpose: Help page with instructions on how to use all site features including navigation, player, gallery, forms, and subscribe
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AirWave Help Center - Learn how to use all features of the AirWave podcast platform">
+    <title>AirWave - Help</title>
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+    <link rel="stylesheet" href="dd.css">
+</head>
+<body>
+    <!-- Header with navigation -->
+    <header role="banner">
+        <div class="logo">
+            <h1>🎙️ AirWave</h1>
+        </div>
+        <nav role="navigation" aria-label="Main navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html">Episodes</a></li>
+                <li><a href="Booking.html">Book a Guest</a></li>
+                <li><a href="Help.html" aria-current="page">Help</a></li>
+                <li><a href="About.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main content -->
+    <main role="main">
+        <!-- Page Header -->
+        <section class="page-header">
+            <h2>❓ Help Center</h2>
+            <p>Everything you need to know about using AirWave</p>
+        </section>
+
+        <!-- Help Sections -->
+        <section class="help-content" aria-labelledby="help-heading">
+            <h2 id="help-heading">How to Use AirWave</h2>
+            
+            <!-- Navigation Help -->
+            <article class="help-article">
+                <h3>🧭 1. How to Navigate the Site</h3>
+                <p>The AirWave website features a consistent navigation bar at the top of every page. Here's how to use it:</p>
+                <ul>
+                    <li><strong>Home:</strong> Returns you to the main page with the featured episode player and latest episodes</li>
+                    <li><strong>Episodes:</strong> Takes you to the gallery page where you can browse all episodes and view the episode table</li>
+                    <li><strong>Book a Guest:</strong> Opens the guest booking form if you want to appear on the podcast</li>
+                    <li><strong>Help:</strong> Brings you to this help page with instructions and FAQs</li>
+                    <li><strong>About:</strong> Shows information about the podcast, host, and creator</li>
+                </ul>
+                <p class="tip"><strong>Tip:</strong> The navigation bar is sticky and stays at the top as you scroll, so you can always access it.</p>
+            </article>
+
+            <!-- Audio Player Help -->
+            <article class="help-article">
+                <h3>🎵 2. How to Use the Audio Player</h3>
+                <p>The audio player on the Home page lets you listen to featured episodes. Here's how each control works:</p>
+                <ul>
+                    <li><strong>Play/Pause Button (▶/⏸):</strong> Click to start or pause the episode playback</li>
+                    <li><strong>Progress Bar:</strong> Shows how much of the episode has played. You can click or drag the slider to jump to any part of the episode</li>
+                    <li><strong>Current Time:</strong> Displays how many minutes and seconds have elapsed (e.g., 2:30 means 2 minutes 30 seconds)</li>
+                    <li><strong>Duration:</strong> Shows the total length of the episode (e.g., 45:30 means 45 minutes 30 seconds)</li>
+                    <li><strong>Volume Control (🔊):</strong> Drag the volume slider left or right to decrease or increase the volume</li>
+                </ul>
+                <p class="tip"><strong>Tip:</strong> The player remembers your volume setting, so you don't need to adjust it every time.</p>
+            </article>
+
+            <!-- Gallery & Table Help -->
+            <article class="help-article">
+                <h3>📀 3. How to Read the Episode Table and Gallery</h3>
+                <p>The Gallery page (Episodes) has two main sections:</p>
+                
+                <h4>Episode Gallery Grid:</h4>
+                <ul>
+                    <li>Each episode is displayed as a card with cover art, title, and description</li>
+                    <li>Hover over any card to see a subtle highlight effect</li>
+                    <li>The grid is responsive and adjusts to your screen size</li>
+                </ul>
+                
+                <h4>Episode Data Table:</h4>
+                <ul>
+                    <li><strong>Episode #:</strong> The unique episode number (e.g., 001, 002)</li>
+                    <li><strong>Title:</strong> The name of the episode topic</li>
+                    <li><strong>Guest:</strong> The name of the featured guest speaker</li>
+                    <li><strong>Duration:</strong> How long the episode is (in minutes:seconds)</li>
+                    <li><strong>Release Date:</strong> When the episode was published</li>
+                </ul>
+                <p class="tip"><strong>Tip:</strong> Alternate rows in the table have a different background color to make reading easier. Hover over any row to highlight it.</p>
+            </article>
+
+            <!-- Booking Form Help -->
+            <article class="help-article">
+                <h3>📝 4. How to Fill Out the Guest Booking Form</h3>
+                <p>To apply as a guest on AirWave, follow these steps:</p>
+                <ol>
+                    <li><strong>Personal Information:</strong>
+                        <ul>
+                            <li>Enter your full name (required)</li>
+                            <li>Provide a valid email address (required)</li>
+                            <li>Add your phone number (optional)</li>
+                        </ul>
+                    </li>
+                    <li><strong>Expertise & Topic:</strong>
+                        <ul>
+                            <li>Select your area of expertise from the dropdown menu</li>
+                            <li>Specify the exact topic you want to discuss</li>
+                        </ul>
+                    </li>
+                    <li><strong>Appearance Preferences:</strong>
+                        <ul>
+                            <li>Select your gender (required)</li>
+                            <li>Check all areas of interest that apply (Live Interview, Pre-recorded, Remote Call, or Studio Visit)</li>
+                        </ul>
+                    </li>
+                    <li><strong>Additional Information:</strong>
+                        <ul>
+                            <li>Write a pitch explaining why you'd be a great guest</li>
+                            <li>Optionally add your website or social media links</li>
+                            <li>Agree to the terms and conditions</li>
+                        </ul>
+                    </li>
+                    <li><strong>Submit:</strong> Click "Submit Application" to send your booking request</li>
+                </ol>
+                <p class="tip"><strong>Tip:</strong> Fields marked with <span class="required">*</span> are required. You cannot submit the form without completing them.</p>
+            </article>
+
+            <!-- Subscribe Form Help -->
+            <article class="help-article">
+                <h3>📧 5. How to Use the Subscribe Form</h3>
+                <p>The subscribe form appears in the footer of every page. Here's how to use it:</p>
+                <ol>
+                    <li>Scroll down to the bottom of any page</li>
+                    <li>Find the "Subscribe to AirWave" section</li>
+                    <li>Enter your email address in the input field</li>
+                    <li>Click the "Subscribe" button</li>
+                    <li>You'll receive a confirmation message</li>
+                </ol>
+                <p>After subscribing, you'll receive email notifications whenever we publish new episodes. You can unsubscribe at any time by clicking the unsubscribe link in any email.</p>
+                <p class="tip"><strong>Tip:</strong> Use a valid email address. We'll send a confirmation email to verify your subscription.</p>
+            </article>
+
+            <!-- FAQ Section -->
+            <article class="help-article">
+                <h3>❓ Frequently Asked Questions</h3>
+                <dl class="faq-list">
+                    <dt>How often are new episodes released?</dt>
+                    <dd>New episodes are published weekly, typically every Monday.</dd>
+                    
+                    <dt>Can I suggest a topic for the podcast?</dt>
+                    <dd>Yes! Use the "Book a Guest" form to submit your topic proposal.</dd>
+                    
+                    <dt>Is the podcast free to listen to?</dt>
+                    <dd>Absolutely! All episodes are completely free to stream on our website.</dd>
+                    
+                    <dt>How can I contact the host?</dt>
+                    <dd>Use the contact information in the footer or fill out the booking form with your message.</dd>
+                    
+                    <dt>Where is AirWave based?</dt>
+                    <dd>AirWave is based in Mogadishu, Somalia, but our audience is global.</dd>
+                </dl>
+            </article>
+        </section>
+    </main>
+
+    <!-- Footer with Subscribe Form -->
+    <footer role="contentinfo">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Subscribe to AirWave</h3>
+                <p>Get the latest episodes delivered to your inbox</p>
+                <form class="subscribe-form" id="footerSubscribeForm" aria-label="Newsletter subscription">
+                    <label for="footerEmail" class="visually-hidden">Email address</label>
+                    <input type="email" id="footerEmail" name="email" placeholder="your@email.com" required aria-required="true">
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="gallery.html">Episodes</a></li>
+                    <li><a href="Booking.html">Book a Guest</a></li>
+                    <li><a href="About.html">About</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>Email: contact@airwave.podcast</p>
+                <p>Location: Mogadishu, Somalia</p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2026 AirWave Podcast. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Subscribe form
+        document.addEventListener('DOMContentLoaded', function() {
+            const subscribeForm = document.getElementById('footerSubscribeForm');
+            subscribeForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                const email = document.getElementById('footerEmail').value;
+                alert(`Thank you for subscribing with ${email}! You'll receive our latest episodes.`);
+                subscribeForm.reset();
+            });
+        });
+    </script>
+</body>
+</html>
