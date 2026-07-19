@@ -1,0 +1,207 @@
+<!-- 
+Filename: gallery.html
+Purpose: Gallery page displaying episode covers in a responsive grid and episode data table with links
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AirWave Episode Gallery - Browse all podcast episodes with covers and detailed information">
+    <title>AirWave - Episodes</title>
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+    <link rel="stylesheet" href="dd.css">
+</head>
+<body>
+    <!-- Header with navigation -->
+    <header role="banner">
+        <div class="logo">
+            <h1>🎙️ AirWave</h1>
+        </div>
+        <nav role="navigation" aria-label="Main navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html" aria-current="page">Episodes</a></li>
+                <li><a href="Booking.html">Book a Guest</a></li>
+                <li><a href="help.html">Help</a></li>
+                <li><a href="About.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main content -->
+    <main role="main">
+        <!-- Page Header -->
+        <section class="page-header">
+            <h2>📀 Episode Gallery</h2>
+            <p>Browse our complete collection of podcast episodes</p>
+        </section>
+
+        <!-- Episode Gallery Grid -->
+        <section class="gallery-section" aria-labelledby="gallery-heading">
+            <h2 id="gallery-heading">Episode Covers</h2>
+            <div class="gallery-grid">
+                <article class="gallery-item">
+                    <img src="https://picsum.photos/seed/tech2026/500/500" alt="Episode 1: The Future of Technology - Cover art showing futuristic tech elements">
+                    <h3>Episode 1: Tech Future</h3>
+                    <p>Exploring innovation and AI in 2026</p>
+                </article>
+                <article class="gallery-item">
+                    <img src="https://picsum.photos/seed/worldpolitics/500/500" alt="Episode 2: Global Politics - World map and political symbols">
+                    <h3>Episode 2: Global Politics</h3>
+                    <p>Analysis of world events and policies</p>
+                </article>
+                <article class="gallery-item">
+                    <img src="https://picsum.photos/seed/cultureheritage/500/500" alt="Episode 3: Culture & Heritage - Traditional art and cultural symbols">
+                    <h3>Episode 3: Culture & Heritage</h3>
+                    <p>Celebrating diversity and traditions</p>
+                </article>
+                <article class="gallery-item">
+                    <img src="https://picsum.photos/seed/businessgrowth/500/500" alt="Episode 4: Business Insights - Graph and business imagery">
+                    <h3>Episode 4: Business Insights</h3>
+                    <p>Entrepreneurship and market trends</p>
+                </article>
+                <article class="gallery-item">
+                    <img src="https://picsum.photos/seed/healthwellness/500/500" alt="Episode 5: Health & Wellness - Medical and wellness symbols">
+                    <h3>Episode 5: Health & Wellness</h3>
+                    <p>Mental and physical health tips</p>
+                </article>
+                <article class="gallery-item">
+                    <img src="https://picsum.photos/seed/education2026/500/500" alt="Episode 6: Education Today - Books and learning materials">
+                    <h3>Episode 6: Education Today</h3>
+                    <p>Modern learning and online education</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Episode Data Table -->
+        <section class="table-section" aria-labelledby="table-heading">
+            <h2 id="table-heading">Episode Details</h2>
+            <table class="episode-table" role="table" aria-label="Complete episode listing with details">
+                <thead>
+                    <tr>
+                        <th scope="col">Episode #</th>
+                        <th scope="col">Title</th>
+                        <th scope="col">Guest</th>
+                        <th scope="col">Duration</th>
+                        <th scope="col">Release Date</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>001</td>
+                        <td>The Future of Technology</td>
+                        <td>Dr.Hassan nour</td>
+                        <td>45:30</td>
+                        <td>June 15, 2026</td>
+                    </tr>
+                    <tr>
+                        <td>002</td>
+                        <td>Global Politics Analysis</td>
+                        <td>Prof. Sarah Mohamed</td>
+                        <td>52:15</td>
+                        <td>June 22, 2026</td>
+                    </tr>
+                    <tr>
+                        <td>003</td>
+                        <td>Culture & Heritage</td>
+                        <td>Sayid Ali</td>
+                        <td>38:45</td>
+                        <td>June 29, 2026</td>
+                    </tr>
+                    <tr>
+                        <td>004</td>
+                        <td>Business Insights</td>
+                        <td>Sahal Abshir</td>
+                        <td>41:20</td>
+                        <td>July 1, 2026</td>
+                    </tr>
+                    <tr>
+                        <td>005</td>
+                        <td>Health & Wellness</td>
+                        <td>Dr. Amina Osman</td>
+                        <td>47:00</td>
+                        <td>July 5, 2026</td>
+                    </tr>
+                    <tr>
+                        <td>006</td>
+                        <td>Education Today</td>
+                        <td>Prof. Abdullahi Ahmed</td>
+                        <td>43:50</td>
+                        <td>July 8, 2026</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="5"><strong>Total Episodes:</strong> 6 | <strong>Total Duration:</strong> 4h 28m 40s</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+
+        <!-- External Links Section -->
+        <section class="links-section">
+            <h2>Listen on Your Favorite Platform</h2>
+            <div class="platform-links">
+                <a href="https://open.spotify.com" target="_blank" rel="noopener noreferrer" class="platform-btn spotify">
+                    🎵 Listen on Spotify
+                </a>
+                <a href="https://podcasts.apple.com" target="_blank" rel="noopener noreferrer" class="platform-btn apple">
+                    📱 Listen on Apple Podcasts
+                </a>
+                <a href="index.html" class="platform-btn home">
+                    🏠 Back to Home
+                </a>
+                <a href="booking.html" class="platform-btn booking">
+                    📝 Book a Guest
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer with Subscribe Form -->
+    <footer role="contentinfo">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Subscribe to AirWave</h3>
+                <p>Get the latest episodes delivered to your inbox</p>
+                <form class="subscribe-form" id="footerSubscribeForm" aria-label="Newsletter subscription">
+                    <label for="footerEmail" class="visually-hidden">Email address</label>
+                    <input type="email" id="footerEmail" name="email" placeholder="your@email.com" required aria-required="true">
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="gallery.html">Episodes</a></li>
+                    <li><a href="Booking.html">Book a Guest</a></li>
+                    <li><a href="About.html">About</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>Email: contact@airwave.podcast</p>
+                <p>Location: Mogadishu, Somalia</p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2026 AirWave Podcast. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Subscribe form functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const subscribeForm = document.getElementById('footerSubscribeForm');
+            subscribeForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                const email = document.getElementById('footerEmail').value;
+                alert(`Thank you for subscribing with ${email}! You'll receive our latest episodes.`);
+                subscribeForm.reset();
+            });
+        });
+    </script>
+</body>
+                  </html>
